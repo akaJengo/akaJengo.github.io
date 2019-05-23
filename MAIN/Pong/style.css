@@ -1,0 +1,39 @@
+canvas {
+  background: grey;
+  display: block;
+  margin: auto;
+}
+
+#BallY {
+  padding: 20px; 
+}
+
+#BallX {
+  padding: 20px; 
+}
+
+#Paddle{
+  padding: 20px; 
+}
+
+#yVal{
+  padding: 50px; 
+}
+
+#xVal{
+  padding: 90px; 
+}
+
+#paddleVal{
+  padding: 80px; 
+}
+
+.names{
+  font-size: 20px; 
+  font-family: "Times New Roman", Times, serif;
+}
+
+.posNames{
+  font-size: 20px; 
+  font-family: "Times New Roman", Times, serif;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>ML Pong</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+      <canvas id="myCanvas" width="720" height="720"></canvas>
+      <div class="names">
+        <span id="BallY">Ball Y Position</span>
+        <span id="BallX">Ball X Position</span>
+        <span id="Paddle">Left Paddle Train</span>
+      </div>
+      <div class="posNames">
+        <span id="yVal">0</span>
+        <span id="xVal">0</span>
+        <span id="paddleVal">0</span>
+      </div>
+    </body>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+  <script src="pong.js"></script>
+</html>
