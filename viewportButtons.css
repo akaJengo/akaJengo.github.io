@@ -9,29 +9,23 @@
   margin: 0 auto;
 }
 .zoom:hover {
-  transform: scale(1.25); /* Enlargen by 25% (125% scaling)*/
+  transform: scale(1.2); /* Enlargen by 25% (125% scaling)*/
 }
 
 /* Buttons Formatting */
 .prevBut img {
-  margin: 4%;
+  margin: 2.5%;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 6%;
-  height: 6%;
+  width: 5%;
+  height: 5%;
   cursor: pointer;
 }
 
 /* Buttons Group Background */
 .prevBut {
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(30, 30, 30);
   margin-left: 20%;
   margin-right: 20%;
   padding: 10px;
-  border-color: rgb(12, 12, 12);
-  border-top-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-top-width: 3px;
 }
