@@ -1,15 +1,245 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>MAIN</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div>
-      <a href="TensorTrain/index.html">Tensor Data Training</a>
-      <div>
-        <a href="Pong/index.html">Developing AI for pong</a>
-      </div>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+    <link rel="stylesheet" type="text/css" href="projects.css"> 
+    <link rel="shortcut icon" href="images/MW.ico" />
+    <meta charset = "UTF-8" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Michael Wisniewski</title>    
+</head>
+    <body>
+        <div class="topnav" id="myTopnav">  <!-- Nav Bar -->
+			<div id="myNav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="#projects">Projects</a>
+				<a href="about.html">About</a>
+				<a id="contact" href="contact.html">Contact</a>
+			</div>
+		</div>
+			<div class="navBar">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="#projects">Projects</a>
+				<a href="about.html">About</a>
+				<a id="contact" href="contact.html">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="openNav()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</div>
+        <div class = "front">
+            <div class  = "main">
+                <h1>Michael Wisniewski</h1>
+                <h2>Computer Science (BSc)</h2>
+                <p>I am a 4th year student at Brock University in St. Catharines Ontario. 
+                    I am majoring in BSc (Bachelor of computer science) with a minor in business. 
+                    I have a solid understanding of multiple programming languages, software development,
+                     and business practices and methodologies.</p>
+                <div class = "buttons">
+                    <a href="resume.html"><button class="button button4">Resume</button></a>
+                    <a href="https://github.com/akaJengo"><img src="images/git.png" alt="Github" width="37" height="37"></a>
+                    <a href="https://www.linkedin.com/in/michael-wisniewski-45457822a/"><img src="images/linkedin.png" alt="Linkedin" width="35" height="35"></a>
+                    <a href="contact.html"><img src="images/email.png" alt="Email" width="40" height="40"></a>
+                </div> 
+                <div class = "botty">
+                    <img src="images/bot2.png" alt="Projects" width="40%" height="40%">
+                </div>
+            </div>
+            <div class = "pics">
+                <img src="images/proj.png" alt="Projects" width="100%" height="100%">
+            </div>
+        </div>
+        <div class ="DNA">
+            <img src="images/dna.png" alt="DNA" width="140%" height="160%">
+        </div>
+        <div class = "projects" id ="projects">
+            <h2>PROJECTS</h2>
+
+ 
+                    <div class="filter-btn">
+                          <ul id="buttons">
+                        <li class="active" data-target="all">All</li>
+                        <li data-target="ml">Machine-Learning</li>
+                        <li data-target="g">Games</li>
+                        <li data-target="w">Website</li>
+                        <li data-target="o">Other</li>
+                          </ul>
+                       </div>
+  
+
+
+            <div class = "container">
+                <div class="grid-row"> 
+
+                <div class="grid-item" data-id="ml">
+                    <div class="grid-item-wrapper">
+                        <div class="grid-item-container">
+                            <div class="grid-image-top" style="background-color: #EB5757;">
+                                <span class="centered project-image-bg blue"> <img src="images/openai.png" style="width:100%"></span>
+                            </div>
+                            <div class="grid-item-content">
+                                <div class = "top-item">
+                                    <span class="item-title">Open AI Gym</span>  
+                                    <div class = "link">
+                                        <a href="https://github.com/akaJengo/SlimeVolleyGym"><img src="images/git.png" alt="Github" width="37" height="37"></a>
+                                    </div>
+                                </div>
+                                <span class="item-category">Machine Learning</span>
+                                <span class="item-excerpt">Solving an Open AI gym using PPO algorithms.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- GYM-->
+
+                <div class="grid-item" data-id="ml">
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <div class="grid-image-top" style="background-color: #467381;">
+                                    <span class="centered project-image-bg blue"> <img src="images/deap.png" style="width:40%"></span>
+                                </div>
+                                <div class="grid-item-content">
+                                    <div class = "top-item">
+                                        <span class="item-title">REGRESSION</span>  
+                                        <div class = "link">
+                                            <a href="https://github.com/akaJengo/GP-4P82"><img src="images/git.png" alt="Github" width="37" height="37"></a>
+                                        </div>
+                                    </div>
+                                    <span class="item-category">Genetic Program</span>
+                                    <span class="item-excerpt">Genetic Program for Breast cancer classifcation and symbolc regression</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>  <!-- GP Regression -->
+                    
+                <div class="grid-item" data-id="g">
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top" style="background-color: #cecae9;">
+                                        <span class="centered project-image-bg blue"> <img src="images/chess.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <div class = "top-item">
+                                            <span class="item-title">CHESS</span>  
+                                            <div class = "link">
+                                                <a href="https://github.com/akaJengo/ChessAI"><img src="images/git.png" alt="Github" width="37" height="37"></a>
+                                            </div>
+                                        </div>
+                                        <span class="item-category">Game</span>
+                                        <span class="item-excerpt">Chess engine, GUI, and AI</span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                </div>  <!-- Chess -->
+                    
+
+                    
+                <div class="grid-item" data-id="g">
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-item-container">
+                            <div class="grid-image-top" style="background-color: #e6ecec;">
+                                <span class="centered project-image-bg blue"> <img src="images/traffic.png" style="width:100%"></span>
+                            </div>
+                            <div class="grid-item-content">
+                                <div class = "top-item">
+                                    <span class="item-title">TRAFFIC SIM</span>  
+                                    <div class = "link">
+                                        <a href="https://github.com/aidanLarock/TrafficGame"><img src="images/git.png" alt="Github" width="37" height="37"></a>
+                                    </div>
+                                </div>
+                                <span class="item-category">Game</span>
+                                <span class="item-excerpt">Traffic simulation game for course project</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- Traffic Sim -->
+
+                <div class="grid-item" data-id="g">
+                    <div class="grid-item-wrapper">
+                        <div class="grid-item-container">
+                            <div class="grid-image-top" style="background-color: #3f79bd;">
+                                <span class="centered project-image-bg blue"> <img src="images/pongim.png" style="width:60%"></span>
+                            </div>
+                            <div class="grid-item-content">
+                                <div class = "top-item">
+                                    <span class="item-title">PONG AI</span>  
+                                    <div class = "link">
+                                        <a href="Pong/index.html"><img src="images/MW.ico" alt="Github" width="37" height="37"></a>
+                                    </div>
+                                </div>
+                                <span class="item-category">Game</span>
+                                <span class="item-excerpt">Play vs an AI that trains from your plays. WIP</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- Pong -->
+
+                <div class="grid-item" data-id="f">
+                </div>  <!-- Hill Climb -->
+
+                <div class="grid-item" data-id="ml">      
+                </div>  <!-- Hill Climb -->
+                <div class="grid-item" data-id="web">  
+                </div> <!-- squares -->
+
+            </div>  <!-- Hold them Squares -->       
     </div>
-  </body>
+
+
+        </div>
+
+        <footer>
+            <p>Michael Wisniewski - akajengo.github.io<br>
+            Computer Science (BSc)</p>
+          </footer>
+
+
+    </body>
+    <script>
+        const buttons=document.querySelector("#buttons").children;
+        const items= document.querySelector(".grid-row").children;
+           for(let i=0; i<buttons.length; i++){
+              buttons[i].addEventListener("click",function(){
+             for(let j=0; j<buttons.length; j++){
+             buttons[j].classList.remove("active")
+         }
+         this.classList.add("active")
+         const target=this.getAttribute("data-target");
+
+         for(let k=0; k<items.length; k++){
+           items[k].style.display="none";
+
+
+           if(items[k].getAttribute("data-id")==target){
+               items[k].style.display="block";
+           }
+           if(target=="all"){
+               items[k].style.display="block";
+           }
+         }
+    })
+}
+        var slideIndex = 0;
+        showSlides();
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "50%";
+         }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+         }
+    
+    </script> <!-- good ol' scripts --> 
+    
 </html>
+

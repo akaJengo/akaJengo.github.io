@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+    <link rel="stylesheet" type="text/css" href="projects.css"> 
+    <link rel="shortcut icon" href="images/AL.ico" />
+    <meta charset = "UTF-8" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Aidan Larock</title>    
+</head>
+    <body>
+        <div class="topnav" id="myTopnav">  <!-- Nav Bar -->
+			<div id="myNav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="#projects">Projects</a>
+				<a href="about.html">About</a>
+				<a id="contact" href="contact.html">Contact</a>
+			</div>
+		</div>
+			<div class="navBar">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="#projects">Projects</a>
+				<a href="about.html">About</a>
+				<a id="contact" href="contact.html">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="openNav()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</div>
+
+        <div class = "frontCon" style = "height:80vh">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div id="nameDiv"><label style="font-family: 'Poppins', sans-serif;">Name</label><br><input id="inputName" type="text" name="user_name" placeholder="Enter your name..." required></div>
+                    <div id="emailDiv"><label style="font-family: 'Poppins', sans-serif;">Email</label><br><input id="inputEmail" type="email" name="user_email" placeholder="Enter your email..." required></div>
+                    <div id="messageDiv"><label style="font-family: 'Poppins', sans-serif; ">Message</label><br><textarea id="textareaMessage" name="message" placeholder="Enter your message..." required></textarea></div>
+                    <button id="buttonSend" type="submit" style="font-family: 'Poppins', sans-serif;">SEND MESSAGE</button>
+                </form>
+                <div class = "buttons">
+                    <a href="resume.html"><button class="button button4">Resume</button></a>
+                    <a href="https://github.com/aidanLarock"><img src="images/git.png" alt="Github" width="37" height="37"></a>
+                    <a href="https://www.linkedin.com/in/aidanlarock/"><img src="images/linkedin.png" alt="Linkedin" width="35" height="35"></a>
+                    <a href="contact.html"><img src="images/email.png" alt="Email" width="40" height="40"></a>
+                </div> 
+        </div>
+
+        <footer>
+            <p>AIDAN LAROCK - aidanlarock.com<br>
+            Computer Science (BSc)</p>
+          </footer>
+
+
+    </body>
+    <script>
+        const buttons=document.querySelector("#buttons").children;
+        const items= document.querySelector(".grid-row").children;
+           for(let i=0; i<buttons.length; i++){
+              buttons[i].addEventListener("click",function(){
+             for(let j=0; j<buttons.length; j++){
+             buttons[j].classList.remove("active")
+         }
+         this.classList.add("active")
+         const target=this.getAttribute("data-target");
+
+         for(let k=0; k<items.length; k++){
+           items[k].style.display="none";
+
+
+           if(items[k].getAttribute("data-id")==target){
+               items[k].style.display="block";
+           }
+           if(target=="all"){
+               items[k].style.display="block";
+           }
+         }
+    })
+}
+        var slideIndex = 0;
+        showSlides();
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "50%";
+         }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+         }
+    
+    </script> <!-- good ol' scripts --> 
+    
+</html>
+

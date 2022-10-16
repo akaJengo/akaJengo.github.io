@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="shortcut icon" href="images/AL.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+        <meta charset = "UTF-8" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Aidan Larock</title>    
+        <link rel="stylesheet" type="text/css" href="main.css"> 
+        <link rel="stylesheet" type="text/css" href="projects.css"> 
+    </head>
+    <header class = "slantedDivC">
+            <nav>
+                <div class = "logo-box">
+                    <a href="index.html"><img src="images/ALWhite.png" alt="logo1" align="left" class="logo1" ></a>
+                </div>
+                <div class="topnav" id="myTopnav">  <!-- Nav Bar -->
+                    <div id="myNav" class="overlay">
+				    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				        <div class="overlay-content">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="java.html">Projects</a></li>
+                            <li><a href="resume.html">Resume</a></li> 
+			             </div>
+                    </div>
+                    
+                    <div class="navBar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="java.html">Projects</a></li> 
+                        <li><a href="resume.html">Resume</a></li> 
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+				        <i class="fa fa-bars"></i>
+				        </a>
+                    </div>
+                </div>
+            </nav> <!-- Nav Bars -->
+      
+            <div class="text-box3">
+                <h1 class = "primary-heading">
+                    <span class="heading-sub">Projects</span>
+                </h1>
+            </div> <!-- Title -->
+    </header> <!-- TOP Stuff -->
+    <body>
+        
+    
+        
+        
+        <div class="row3">
+
+            <div class = "filterrow">
+                <div class="filter-btn">
+   	  	         <ul id="buttons">
+                    <li class="active" data-target="all">All</li>
+                    <li data-target="java">Java</li>
+                    <li data-target="python">Python</li>
+                    <li data-target="web">Web</li>
+   	  	         </ul>
+   	            </div>
+            </div>
+            <div class = "container">
+                    <div class="grid-row"> 
+                        <!--
+                        <div class="grid-item" data-id="java">
+                        <a class="wrapping-link" a href="#larock"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <div class="grid-image-top blue">
+                                    <span class="centered project-image-bg blue"> <img src="images/portfolio.png" style="width:70%"></span>
+                                </div>
+                                <div class="grid-item-content">
+                                    <span class="item-title">Markowitz's Theory</span>
+                                    <span class="item-category">Stock</span>
+                                    <span class="item-excerpt">... To Do...</span>
+                                    <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- Best Portfolio -->
+
+                        <div class="grid-item" data-id="python">
+                            <a class="wrapping-link" href="oneP.php?p=gta"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top black">
+                                        <span class="centered project-image-bg blue"> <img src="images/gta.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">GTA Auto Gambler</span>
+                                        <span class="item-category">Game</span>
+                                        <span class="item-excerpt">A python program that finds the horse with the best odds out of...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- GTA Horse Track -->
+                        
+                        <div class="grid-item" data-id="java">
+                                <a class="wrapping-link" href="oneP.php?p=jump"></a>
+                                <div class="grid-item-wrapper">
+                                    <div class="grid-item-container">
+                                        <div class="grid-image-top red">
+                                            <span class="centered project-image-bg blue"> <img src="images/jump.png" style="width:70%"></span>
+                                        </div>
+                                        <div class="grid-item-content">
+                                            <span class="item-title">Jump!</span>
+                                            <span class="item-category">Game</span>
+                                            <span class="item-excerpt">A video game made using Java, in which a player attempts to obtain the highest posible score by...</span>
+                                            <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  <!-- Jump -->
+                        
+                        <div class="grid-item" data-id="java">
+                            <a class="wrapping-link" href="oneP.php?p=options"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top green">
+                                        <span class="centered project-image-bg blue"> <img src="images/options.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Options Tracker</span>
+                                        <span class="item-category">Stock</span>
+                                        <span class="item-excerpt">A Program which finds and logs the ask prices of selected options...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Options Tracker -->
+                        
+                        <div class="grid-item" data-id="web">
+                        <a class="wrapping-link" href="oneP.php?p=laroc"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <div class="grid-image-top blue">
+                                    <span class="centered project-image-bg blue"> <img src="images/ALWhite.png" style="width:70%"></span>
+                                </div>
+                                <div class="grid-item-content">
+                                    <span class="item-title">Larock</span>
+                                    <span class="item-category">Personal Website</span>
+                                    <span class="item-excerpt">My personal website AidanLarock.com. This website features all of my completed projects and my resume.</span>
+                                    <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- Larock -->
+                        
+                        <div class="grid-item" data-id="java">
+                            <a class="wrapping-link" href="oneP.php?p=hill"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top red">
+                                        <span class="centered project-image-bg blue"> <img src="images/climb.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Hill Climb</span>
+                                        <span class="item-category">Simulation</span>
+                                        <span class="item-excerpt">A simulation, which uses 3 seperate threads all running a hill climb algorithm to...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Hill Climb -->
+                        
+                        <div class="grid-item" data-id="python">
+                            <a class="wrapping-link" href="oneP.php?p=pythonShell"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top green">
+                                        <span class="centered project-image-bg green"> <img src="images/shell.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Python Shell</span>
+                                        <span class="item-category">Shell</span>
+                                        <span class="item-excerpt">A shell written in Python, it allows the user to perform commands commonly seen in shells...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Py Shell -->
+                        
+                        <div class="grid-item" data-id="web">
+                        <a class="wrapping-link" href="oneP.php?p=epic"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <div class="grid-image-top red">
+                                    <span class="centered project-image-bg rex-ray-image"><img src="images/oil.png" style="width:70%"></span>
+                                </div>
+                                <div class="grid-item-content">
+                                    <span class="item-title">EPIC</span>
+                                    <span class="item-category">EPIC's Website</span>
+                                    <span class="item-excerpt">Epic Oil...</span>
+                                    <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- Epic -->
+                        
+                        <div class="grid-item" data-id="java">
+                            <a class="wrapping-link" href="oneP.php?p=graphing"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top blue">
+                                        <span class="centered project-image-bg blue"> <img src="images/graph.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Graphing</span>
+                                        <span class="item-category">Topological Search</span>
+                                        <span class="item-excerpt">A searching algorithm which uses a topological search to find course codes in order...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Graphing -->
+                        <!--
+                        <div class="grid-item" data-id="web">
+                        <a class="wrapping-link" a href="#oil"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <div class="grid-image-top green">
+                                    <span class="centered project-image-bg rex-ray-image"><img src="images/art.png" style="width:70%"></span>
+                                </div>
+                                <div class="grid-item-content">
+                                    <span class="item-title">Art</span>
+                                    <span class="item-category">Website</span>
+                                    <span class="item-excerpt">...To Do...</span>
+                                    <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- Art -->
+
+                        <div class="grid-item" data-id="java">
+                            <a class="wrapping-link" href="oneP.php?p=radix"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top red">
+                                        <span class="centered project-image-bg blue"> <img src="images/radix.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Radix Sort</span>
+                                        <span class="item-category">Sorting Algorithm</span>
+                                        <span class="item-excerpt">A sorting algorithm which uses radix sort to correctly sort...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Radix Sort -->
+                        
+                        <div class="grid-item" data-id="java">
+                            <a class="wrapping-link" href="oneP.php?p=insert"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top black">
+                                        <span class="centered project-image-bg rex-ray-image"><img src="images/insert.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Insert Sort</span>
+                                        <span class="item-category">Sorting Algorithm</span>
+                                        <span class="item-excerpt">A sorting algorithm which uses insert sort to correctly order numbers...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Insert Sort -->
+                        
+                         <div class="grid-item" data-id="java">
+                            <a class="wrapping-link" href="oneP.php?p=selection"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top blue">
+                                        <span class="centered project-image-bg red"> <img src="images/selection.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Selection Sort</span>
+                                        <span class="item-category">Sorting Algorithm</span>
+                                        <span class="item-excerpt">A sorting algorithm which uses selection sort to correctly order numbers...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Selection Sort -->
+                        
+                        <div class="grid-item" data-id="java">
+                            <a class="wrapping-link" href="oneP.php?p=bubble"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top green">
+                                        <span class="centered project-image-bg rex-ray-image"><img src="images/bubble.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Bubble Sort</span>
+                                        <span class="item-category">Sorting Algorithm</span>
+                                        <span class="item-excerpt">A sorting algorithm which uses bubble sort to correctly order numbers...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Bubble Sort -->
+                        
+                        <div class="grid-item" data-id="java">
+                            <a class="wrapping-link" href="oneP.php?p=magic"></a>
+                            <div class="grid-item-wrapper">
+                                <div class="grid-item-container">
+                                    <div class="grid-image-top purple">
+                                        <span class="centered project-image-bg rex-ray-image"><img src="images/cards.png" style="width:70%"></span>
+                                    </div>
+                                    <div class="grid-item-content">
+                                        <span class="item-title">Magic</span>
+                                        <span class="item-category">Game</span>
+                                        <span class="item-excerpt">A fun magic trick written in Java which creates card objects and stores them into arrays, it then displays...</span>
+                                        <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- Magic -->
+                        <!--   
+                        <div class="grid-item" data-id="web">
+                        <a class="wrapping-link" a href="#rep"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <div class="grid-image-top black">
+                                    <span class="centered project-image-bg rex-ray-image"><img src="images/ni.png" style="width:70%"></span>
+                                </div>
+                                <div class="grid-item-content">
+                                    <span class="item-title">Reptile</span>
+                                    <span class="item-category">Reptile Website</span>
+                                    <span class="item-excerpt">Niagara Exotic's is a reptile retailer in Niagara Falls, I completed thi...</span>
+                                    <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- Reptile -->
+
+                        
+
+                    </div> <!-- squares -->
+                </div>  <!-- Hold them Squares -->       
+        </div>
+        
+        <div class = "space"></div> <!-- Like Outer Space? -->
+        <div class ="slantedDivB" >
+                <div class="text-box2">
+                    <h1 class = "primary-heading"> 
+                        <a href="index.html"><button class="button button7">Aidan Larock</button></a>
+                        <a href="#top"><button class="button button5">Back to Top</button></a>
+                        <a href="https://www.linkedin.com/in/aidanlarock/"><button class="button button7">Linkedin</button></a>
+                    </h1> <!--Footer -->
+                </div> <!-- Footer -->
+            </div> <!-- Footer stuffs -->
+        <script>
+                const buttons=document.querySelector("#buttons").children;
+	            const items= document.querySelector(".grid-row").children;
+	               for(let i=0; i<buttons.length; i++){
+	    	          buttons[i].addEventListener("click",function(){
+	    		     for(let j=0; j<buttons.length; j++){
+	    		 	buttons[j].classList.remove("active")
+	    		 }
+	    		 this.classList.add("active")
+	    		 const target=this.getAttribute("data-target");
+
+	    		 for(let k=0; k<items.length; k++){
+                   items[k].style.display="none";
+
+
+                   if(items[k].getAttribute("data-id")==target){
+                   	items[k].style.display="block";
+                   }
+                   if(target=="all"){
+                   	items[k].style.display="block";
+                   }
+	    		 }
+	    	})
+	    }
+                var slideIndex = 0;
+showSlides();
+
+                function openNav() {
+                    document.getElementById("myNav").style.width = "50%";
+                 }
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                 }
+            
+            </script> <!-- good ol' scripts --> 
+        
+        
+    </body> <!-- The Body of the page -->
+    
+</html> <!-- Contact -->
+
