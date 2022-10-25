@@ -147,20 +147,7 @@ h5{
     z-index: 1;
 }
 
-.bot { 
-    position: absolute;
-    top: 50%;
-}
 
-.bot .img{
-    position: relative;
-}
-
-.DNA{
-    position: absolute;
-    top: 50px;
-    right: 60px;
-}
 
 .button {
     background-color: #004d2f; /* Green */
