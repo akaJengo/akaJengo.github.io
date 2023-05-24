@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300");
+
+body {
+  color: #6C6C6C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.projects{
+  background-color: #004d2f;
+  position: relative;
+  margin-top: 0%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3%;
+}
+
+.projects h2{
+  color:white;
+}
+
+.filterrow{
+    margin-top:120px;
+}
+
+.buttons-project a{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  transition: 300ms;
+}
+
+.buttons-project a:after {
+	content: '';
+	width: 0px;
+	height: 3px;
+	display: block;
+	background: #004d2f;
+	transition: 300ms;
+}
+
+.buttons-project a:hover{
+  color:#004d2f;  
+}
+.buttons-project a:hover:after {
+	width: 100%;
+}
+
+
+.container {
+  padding-top: 30px;
+  max-width: 1335px;
+  margin: 0 auto;
+}
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.grid-item {
+  height: 550px;
+  flex-basis: 20%;
+  -ms-flex: auto;
+  width: 259px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: -10%;
+}
+
+.grid-row a {
+  text-decoration: none;
+}
+
+
+.grid-item-wrapper {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+  background: #F5F5F5;
+  margin: 0;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+  transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+}
+
+.grid-item-container {
+  height: 110%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-image-top {
+  height: 45%;
+  width: 120%;
+  background-size: cover;
+  position: relative;
+  background-position: 50% 50%;
+  left: -10.5%;
+  top: -4.5%;
+}
+
+.grid-image-top .centered {
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 54.5%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  background-position: center;
+}
+
+
+.grid-item-content {
+  padding: 0 20px 20px 20px;
+}
+
+.filter-btn{
+	float: left;
+	width:100%;
+	text-align: center;
+}
+.filter-btn ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.filter-btn ul li{
+	display: inline-block;
+	padding:6px 15px;
+  font-family: 'Poppins', sans-serif;
+	color:#fff;
+	margin:0px 1px;
+  border-radius: 8px;
+	cursor: pointer;
+	font-size:16px;
+
+}
+
+.top-item{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.link{
+  right:10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-btn ul li:hover{
+  filter:brightness(0.6);
+  background-color:#004d2f;
+  cursor: pointer;
+}
+
+.filter-btn ul li.active{
+	background-color:#004d2f;
+  color:#fff;
+  cursor:default;
+}
+
+.item-title {
+  font-size: 24px;
+  color: #004d2f;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.item-category {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item-excerpt {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.more-info {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 65px;
+  padding-left: 0;
+  transition-duration: .5s;
+  font-size: 12px;
+  display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.more-info i {
+  padding-left: 5px;
+  transition-duration: .5s;
+}
+
+.grid-item:hover .more-info i {
+  padding-left: 20px;
+  transition-duration: .5s;
+}
+
+.more-info i::before {
+  font-size: 16px;
+}
+
+.grid-item:hover .grid-item-wrapper {
+  padding: 2% 2%;
+  margin: -2% -2%;
+}
+
+@media(max-width: 1333px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 1073px) {
+   .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 815px) {
+  .grid-item {
+    flex-basis: 50%;
+  }
+}
+@media(max-width: 555px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
+}
