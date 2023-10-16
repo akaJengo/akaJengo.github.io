@@ -1,0 +1,30 @@
+
+.project {
+    flex-basis: calc(33.33% - 20px); /* Adjust width as needed, leaving some space between sections */
+    margin: 10px; /* Add margin for spacing between sections */
+    padding: 20px;
+    background-color: #fff; /* Optional: Add a background color for each project section */
+    border: 1px solid #ccc; /* Optional: Add a border for each project section */
+}
+
+/* Additional styling for the project section */
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slime{
+    width: 400% ;
+    height: 200%;
+}
+
+.gif {
+    position: relative;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}

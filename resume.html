@@ -1,87 +1,33 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css"> 
-    <link rel="stylesheet" type="text/css" href="projects.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
     <link rel="shortcut icon" href="images/MW.ico" />
-    <meta charset = "UTF-8" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Michael Wisniewski</title>    
+    <title>Resume</title>
 </head>
-    <body>
-        <div class="topnav" id="myTopnav">  <!-- Nav Bar -->
-			<div id="myNav" class="overlay">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<div class="overlay-content">
-				<a href="index.html">Home</a>
-				<a href="resume.html">Resume</a>
-				<a id="contact" href="contact.html">Contact</a>
-			</div>
-		</div>
-			<div class="navBar">
-				<a href="index.html">Home</a>
-				<a href="resume.html">Resume</a>
-				<a id="contact" href="contact.html">Contact</a>
-				<a href="javascript:void(0);" class="icon" onclick="openNav()">
-				<i class="fa fa-bars"></i>
-				</a>
-			</div>
-		</div>
-        <div class = "pdf">
-            <embed src="images/resume.pdf" width="600px" height="750px" type="application/pdf">
-        </div>
-
-
-        <footer>
-            <nav>
-                <p class="footy">Michael Wisniewski - akajengo.github.io<br>
-                    Computer Science (BSc)</p>
-                <a href="index.html">Home</a>
-                <a href="resume.html">Resume</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </footer>
-
-
-    </body>
-    <script>
-        const buttons=document.querySelector("#buttons").children;
-        const items= document.querySelector(".grid-row").children;
-           for(let i=0; i<buttons.length; i++){
-              buttons[i].addEventListener("click",function(){
-             for(let j=0; j<buttons.length; j++){
-             buttons[j].classList.remove("active")
-         }
-         this.classList.add("active")
-         const target=this.getAttribute("data-target");
-
-         for(let k=0; k<items.length; k++){
-           items[k].style.display="none";
-
-
-           if(items[k].getAttribute("data-id")==target){
-               items[k].style.display="block";
-           }
-           if(target=="all"){
-               items[k].style.display="block";
-           }
-         }
-    })
-}
-        var slideIndex = 0;
-        showSlides();
-
-        function openNav() {
-            document.getElementById("myNav").style.width = "50%";
-         }
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-         }
-    
-    </script> <!-- good ol' scripts --> 
-    
+<body>
+    <header>
+        <h1>Resume</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biography.html">About me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Embed the PDF using the <embed> element -->
+        <embed src="images/Michael_Wisniewski_Resume.pdf" type="application/pdf" width="100%" height="800px">
+    </main>
+    <footer>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:wisniewskimichael4374@gmail.com">wisniewskimichael4374@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/michael-wisniewski-45457822a/">linkedin.com/michael-wisniewski</a></p>
+        <p>Github: <a href="https://github.com/akaJengo">github.com/akaJengo</a></p>
+        <p>&copy; 2023 Michael Wisniewski</p>
+    </footer>
+</body>
 </html>
-

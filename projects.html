@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/projects.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="shortcut icon" href="images/MW.ico" />
+    <title>Projects</title>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biography.html">About me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="project">
+            <img src="images/PaintThumbs.png" alt="Project 1">
+            <h2>Paint Number Guesser</h2>
+            <p>Developed by one of my students under my supervision. Created an AI that would read the
+                pixel values on the screen and predict the number written. Using the MNIST training set 
+                we trained a feedforward neural network with backpropagation using Keras. The trained model
+                was exported and implemented into the paint program. 
+            </p>
+            <a href="https://github.com/akaJengo/Paint-Number-Guesser">View Project</a>
+        </section>
+        
+        <section class="project">
+            <img src="images/Museum_logo.svg" alt="Project 2">
+            <h2>Niagara Museum App</h2>
+            <p>The frontend lead, oranized a team of students in building a Niagara Museum Association app using React and React Native,  
+                in order to allow access to virtual tours. Created modals, buttons, login screen, text and basic navigation around the app. 
+                Implemented the React Native codebase to work on various mobile applications such as IOS and Android including respective styling. 
+                Worked in an agile environment with regular scum meetings utilizing Jira to track and update backlogs.
+            </p>
+            <p>
+                Additions can be seen under commits and viewed through various branches. 
+                Progress reports can be viewed <a href="https://github.com/akaJengo/Niagara-Museum-App/tree/main/ProgressReports">here.</a>
+            </p>
+            <a href="https://github.com/akaJengo/Niagara-Museum-App">View Project</a>
+        </section>
+
+        <section class="project">
+            <img src="images/MilkThumb.png" alt="Project 3">
+            <h2>Milk Runner</h2>
+            <p>This project is an IOS/Android app using React Native this aims to save time on delivery drivers such as Uber, Skip, Pharma and 
+                Grocers. Implemented Dijkstra search heap to find the optimal path between delivery locations, where the max search is limited to 
+                10 000 locations in a worst case of O(E + V log V) running time, where edges and vertices are defined respectively. 
+            </p>
+            <a href="https://github.com/akaJengo/MilkRunner">View Project</a>
+        </section>
+        
+        <section class="project">
+            <img src="images/tsim.png" alt="Project 4">
+            <h2>Traffic Simulator</h2>
+            <p>This project is a simulation game that simulates a driving environment using graphs to represent 
+                roads and intersections. Players control a vehcile and attept to manuver their vheicle around busy 
+                streets filled with npc cars, busses, and other vehicles.
+            </p>
+            <p>
+                Implemented various Java Design patterns such as model view controller, factory, 
+                singleton, composite and used XML/XSD to verify the structure of the data and parse elements.
+                A breakdown of the program can be viewed <a href="https://github.com/akaJengo/TrafficGame/blob/main/TrafficSim_Design_Patterns.pdf">here.</a>
+            </p>
+            <a href="https://github.com/akaJengo/TrafficGame">View Project</a>
+            <a href="https://aidanlarock.com/">Partner</a>
+        </section>
+
+        <section class="project">
+            <img src="images/ribbon.png" alt="Project 5">
+            <h2>Genetic Programming Breast Cancer Regression</h2>
+            <p>This project is able to extrapolate information if a given person has a malignant or benign tumor based on 30 parameters. 
+                Using genetic programming this project was able to identify cancerous tumours in over 20k+ patients. 
+                Futhermore, testing out of sample data proved to be accurate within 98%.  
+            </p>
+            <p>A detailed document on the project methodologies can be viewed <a href="https://github.com/akaJengo/GP-4P82/blob/main/Classification_of_Breast_Cancer_with_Genetic_Programing_2.pdf">here.</a>
+                Parameter testing can be viewed <a href="https://github.com/akaJengo/GP-4P82/blob/main/Testing_GP_Parameters_on_Symbolic_Regression.pdf">here.</a>
+            </p>
+            <a href="https://github.com/akaJengo/GP-4P82">View Project</a>
+            <a href="https://aidanlarock.com/">Partner</a>
+        </section>
+
+        <section class="project">
+            <img src="images/slimethumb.png" alt="Project 6">
+            <h2>Open AI SlimeVolley</h2>
+            <p>SlimeVolley Gym is a model-free reinforcement learning algorithm that uses proximal policy optimization. 
+                PPO falls into the actor-critic family of reinforcement learning. Using Stable-Baselines 3, the project
+                was able to use PPO to train the slime (our slime is yellow). 
+                <h3>Pre-Trained</h3>
+                <div class="gif">
+                    <img class="slime" src="images/pretrainslime.gif" alt="slime gif" data-griffer>
+                </div>
+                <h3>Trained</h3>
+                <div class="gif">
+                    <img class="slime" src="images/trainedSlime.gif" alt="trained slime">
+                </div>
+            </p>
+            <a href="https://github.com/akaJengo/SlimeVolleyGym">View Project</a>
+            <a href="https://aidanlarock.com/">Partner</a>
+        </section>
+
+        <section class="project">
+            <img src="images/chessthumb.png" alt="Project 7">
+            <h2>Chess AI</h2>
+            <p>This project uses Alpha Beta pruning where it can Min/Max each board possibility and move
+                between the player and the AI. It begins by viewing the entire board and assesing each piece 
+                and its value (weight). It then creates a new state and makes a move, based on the move it makes
+                the AI calculate the heuristic function. Once the AI has gone down to its depth (~14) it then 
+                begins walking the path, it walks down the path where it is the best for the AI and the worst 
+                for the player (Min-Max). Then proceeds to make that move.    
+                </p>
+            <a href="https://github.com/akaJengo/ChessAI">View Project</a>
+            <a href="https://aidanlarock.com/">Partner</a>
+        </section>
+    </main>
+    <footer>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:wisniewskimichael4374@gmail.com">wisniewskimichael4374@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/michael-wisniewski-45457822a/">linkedin.com/michael-wisniewski</a></p>
+        <p>Github: <a href="https://github.com/akaJengo">github.com/akaJengo</a></p>
+        <p>&copy; 2023 Michael Wisniewski</p>
+    </footer>
+</body>
+</html>
+
